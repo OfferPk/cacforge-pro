@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="prevBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060911"/>
+      <stop offset="100%" stop-color="#0d1424"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111c33"/>
+      <stop offset="100%" stop-color="#09101f"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1976d2"/>
+      <stop offset="100%" stop-color="#00b0ff"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00c853"/>
+      <stop offset="100%" stop-color="#64dd17"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="940" height="560" fill="url(#prevBg)"/>
+
+  <!-- Window Header -->
+  <rect x="0" y="0" width="940" height="50" fill="url(#headerGrad)" stroke="#1e2c47" stroke-width="1"/>
+  <circle cx="25" cy="25" r="6" fill="#ff5252"/>
+  <circle cx="45" cy="25" r="6" fill="#ffb300"/>
+  <circle cx="65" cy="25" r="6" fill="#00e676"/>
+  <text x="95" y="29" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff">🛡️ CACForge Pro | CCSDS 357.0-B-1 Space Authentication Studio (v1.0.0)</text>
+  <rect x="730" y="12" width="190" height="26" rx="4" fill="#00e5ff" fill-opacity="0.15" stroke="#00e5ff" stroke-width="1"/>
+  <text x="825" y="29" font-family="monospace" font-size="10" font-weight="700" fill="#00e5ff" text-anchor="middle">MISSION: ARTEMIS GATEWAY</text>
+
+  <!-- Tab Bar -->
+  <rect x="0" y="50" width="940" height="35" fill="#0a101d" stroke="#1e2c47" stroke-width="1"/>
+  <rect x="20" y="50" width="220" height="35" fill="#121b2d" stroke-bottom="#00e5ff" stroke-width="2"/>
+  <text x="130" y="72" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#00e5ff" text-anchor="middle">X.509 Space Profile (PKI)</text>
+  <text x="360" y="72" font-family="-apple-system, sans-serif" font-size="12" font-weight="500" fill="#90a4cb" text-anchor="middle">Protected Simple Auth (ISO 9594-8)</text>
+  <text x="600" y="72" font-family="-apple-system, sans-serif" font-size="12" font-weight="500" fill="#90a4cb" text-anchor="middle">23-Point ICS Normative Auditor</text>
+
+  <!-- Left Panel: Configuration Form -->
+  <rect x="20" y="100" width="435" height="435" rx="6" fill="#0e172a" stroke="#1e2c47" stroke-width="1"/>
+  <rect x="20" y="100" width="435" height="35" rx="6" fill="#14213d"/>
+  <text x="35" y="123" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#f0f4fc">SPACE CERTIFICATE PARAMETERS</text>
+  <rect x="365" y="108" width="80" height="20" rx="3" fill="#00e5ff" fill-opacity="0.15"/>
+  <text x="405" y="122" font-family="monospace" font-size="9" font-weight="700" fill="#00e5ff" text-anchor="middle">RFC 5280</text>
+
+  <g transform="translate(35, 150)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#90a4cb">Subject Common Name (Flight Entity FQDN)</text>
+    <rect x="0" y="8" width="405" height="28" rx="4" fill="#060a12" stroke="#1e2c47"/>
+    <text x="10" y="26" font-family="monospace" font-size="10" fill="#00e5ff">gateway-pnt-01.lunar.artemis.space</text>
+
+    <text x="0" y="55" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#90a4cb">Organization (Agency / Operator)</text>
+    <rect x="0" y="63" width="405" height="28" rx="4" fill="#060a12" stroke="#1e2c47"/>
+    <text x="10" y="81" font-family="monospace" font-size="10" fill="#ffffff">NASA / ESA Lunar Exploration Directorate</text>
+
+    <text x="0" y="110" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#90a4cb">Validity Calendar &amp; GeneralizedTime Format</text>
+    <rect x="0" y="118" width="405" height="28" rx="4" fill="#060a12" stroke="#1e2c47"/>
+    <text x="10" y="136" font-family="monospace" font-size="10" fill="#00e676">2026-10-19T17:30:00Z to 2031-10-18T17:30:00Z (5 Yrs)</text>
+
+    <text x="0" y="165" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#90a4cb">Digital Signature Algorithm (CCSDS 352.0-B-2)</text>
+    <rect x="0" y="173" width="405" height="28" rx="4" fill="#060a12" stroke="#1e2c47"/>
+    <text x="10" y="191" font-family="monospace" font-size="10" fill="#ffffff">SHA256withRSAEncryption (OID: 1.2.840.113549.1.1.11)</text>
+
+    <text x="0" y="220" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#90a4cb">Subject Alternative Names (SAN DNS)</text>
+    <rect x="0" y="228" width="405" height="28" rx="4" fill="#060a12" stroke="#1e2c47"/>
+    <text x="10" y="246" font-family="monospace" font-size="10" fill="#ffb300">gateway-pnt-01.lunar.artemis.space, telemetry.gateway.lunanet</text>
+
+    <rect x="0" y="280" width="405" height="34" rx="4" fill="url(#btnGrad)"/>
+    <text x="202" y="302" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">⚡ SYNTHESIZE X.509 SPACE CERTIFICATE</text>
+  </g>
+
+  <!-- Right Panel: ASN.1 Dissector & Hex Dump -->
+  <rect x="475" y="100" width="445" height="435" rx="6" fill="#0e172a" stroke="#1e2c47" stroke-width="1"/>
+  <rect x="475" y="100" width="445" height="35" rx="6" fill="#14213d"/>
+  <text x="490" y="123" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#f0f4fc">ASN.1 DER WIRE DISSECTION &amp; PEM</text>
+  <rect x="800" y="108" width="110" height="20" rx="3" fill="#00e676" fill-opacity="0.15"/>
+  <text x="855" y="122" font-family="monospace" font-size="9" font-weight="700" fill="#00e676" text-anchor="middle">DER 997B VALID</text>
+
+  <rect x="490" y="145" width="415" height="375" rx="4" fill="#04070e" stroke="#162238"/>
+  <g transform="translate(505, 170)" font-family="monospace" font-size="10">
+    <text x="0" y="0" fill="#00e5ff">[+] X.509 Space Profile Certificate Synthesized:</text>
+    <text x="0" y="16" fill="#a4c5eb">  Normative Standard: CCSDS 357.0-B-1 (Blue Book, Issue 1)</text>
+    <text x="0" y="32" fill="#a4c5eb">  DER Total Size:     997 octets</text>
+    <text x="0" y="48" fill="#a4c5eb">  Version:            X.509 v3 (INTEGER 2) [Explicit Tag 0]</text>
+    <text x="0" y="64" fill="#a4c5eb">  Serial Number:      0x192a4f9b8c01</text>
+    <text x="0" y="80" fill="#00e676">  Time Encoding:      GeneralizedTime (CCSDS 301.0-B-4 CCS)</text>
+    <text x="0" y="96" fill="#a4c5eb">  NotBefore:          2026-10-19T16:30:00Z</text>
+    <text x="0" y="112" fill="#a4c5eb">  NotAfter:           2031-10-18T16:30:00Z</text>
+    <text x="0" y="128" fill="#a4c5eb">  Signature OID:      1.2.840.113549.1.1.11 (SHA256withRSA)</text>
+    
+    <text x="0" y="152" fill="#00e5ff">[+] ASN.1 DER Hex Dump (Header):</text>
+    <text x="0" y="168" fill="#ffb300">30 82 03 E1 30 82 02 C9 A0 03 02 01 02 02 08 19</text>
+    <text x="0" y="184" fill="#ffb300">2A 4F 9B 8C 01 30 0D 06 09 2A 86 48 86 F7 0D 01</text>
+    <text x="0" y="200" fill="#ffb300">01 0B 05 00 30 52 31 0B 30 09 06 03 55 04 06 13</text>
+    
+    <text x="0" y="224" fill="#00e5ff">[+] Base64 PEM Encapsulation:</text>
+    <text x="0" y="240" fill="#80d8ff">-----BEGIN CERTIFICATE-----</text>
+    <text x="0" y="254" fill="#a4c5eb">MIID4TCCAsmgAwIBAgIIEKRPm4wBMDAwDQYJKoZIhvcNAQELBQAwUjELMAkGA1UE</text>
+    <text x="0" y="268" fill="#a4c5eb">BhMCVVMxHzAdBgNVBAoMFkNDU0RTIFNwYWNlIFBLSSBSb290MS4wLAYDVQQDDCVD</text>
+    <text x="0" y="282" fill="#a4c5eb">Q1NEUyBJbnRlcmdvdmVybm1lbnRhbCBTcGFjZSBDQTAeFw0yNjEwMTkxNjMwMDBa</text>
+    <text x="0" y="296" fill="#a4c5eb">Fw0zMTEwMTgxNjMwMDBaMGYxCzAJBgNVBAYTAlVTMSswKQYDVQQKDCJOQVNBIEdh</text>
+    <text x="0" y="310" fill="#80d8ff">-----END CERTIFICATE-----</text>
+    
+    <text x="0" y="334" fill="#00e676">[+] Annex A Normative Audit: 23/23 Requirements Passed (100.0%)</text>
+  </g>
+</svg>
